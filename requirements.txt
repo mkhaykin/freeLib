@@ -1,7 +1,12 @@
 flask
+flask-login
+flask-wtf
+flask-sqlalchemy
+
 fastapi
 uvicorn
 pydantic
 sqlalchemy
+asyncpg
 psycopg2-binary
 alembic

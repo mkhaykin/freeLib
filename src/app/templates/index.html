@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLib - Электронная библиотека</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="logo">Free<span>Lib</span></div>
+        <div class="user-info">
+            <span>Администратор</span>
+            <div class="user-avatar">А</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="menu-item active">
+                <i class="fas fa-home"></i> Главная
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-book"></i> Книги
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-users"></i> Пользователи
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-exchange-alt"></i> Выдачи
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-cog"></i> Настройки
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-sign-out-alt"></i> Выход
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Главная</h1>
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск по книгам...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-value">1,254</div>
+                    <div class="stat-label">Всего книг</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">342</div>
+                    <div class="stat-label">Доступно</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">78</div>
+                    <div class="stat-label">На руках</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">45</div>
+                    <div class="stat-label">Пользователей</div>
+                </div>
+            </div>
+            
+            <h2 style="margin-bottom: 15px; color: #2c3e50;">Последние добавленные</h2>
+            
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Мастер и Маргарита</div>
+                        <div class="book-author">Михаил Булгаков</div>
+                        <div class="book-actions">
+                            <button class="btn btn-primary">Читать</button>
+                            <button class="btn btn-secondary">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Преступление и наказание</div>
+                        <div class="book-author">Фёдор Достоевский</div>
+                        <div class="book-actions">
+                            <button class="btn btn-primary">Читать</button>
+                            <button class="btn btn-secondary">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Война и мир</div>
+                        <div class="book-author">Лев Толстой</div>
+                        <div class="book-actions">
+                            <button class="btn btn-primary">Читать</button>
+                            <button class="btn btn-secondary">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">1984</div>
+                        <div class="book-author">Джордж Оруэлл</div>
+                        <div class="book-actions">
+                            <button class="btn btn-primary">Читать</button>
+                            <button class="btn btn-secondary">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Тихий Дон</div>
+                        <div class="book-author">Михаил Шолохов</div>
+                        <div class="book-actions">
+                            <button class="btn btn-primary">Читать</button>
+                            <button class="btn btn-secondary">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
